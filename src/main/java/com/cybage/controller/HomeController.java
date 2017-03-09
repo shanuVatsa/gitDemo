@@ -10,6 +10,11 @@ import org.springframework.web.bind.annotation.RestController;
 public class HomeController {
     @RequestMapping("/")
     public String home(){
-          return "Life is wonderful!";
-      }
+        return "Life is wonderful!";
+    }
+
+    @RequestMapping("/createUser")
+    public String createUser(){
+        return "User created!";
+    }
 }
